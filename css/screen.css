@@ -1,0 +1,908 @@
+@import url(bootstrap.min.css);
+@import url(../fonts/fonts.css);
+/* line 12, ../sass/_common.sass */
+* {
+  outline: none !important; }
+
+/* line 15, ../sass/_common.sass */
+input.error, textarea.error {
+  box-shadow: inset 0 0 10px red !important; }
+
+/* line 17, ../sass/_common.sass */
+label.error {
+  display: none !important; }
+
+/* line 21, ../sass/_common.sass */
+.container {
+  max-width: 965px; }
+
+/* line 24, ../sass/_common.sass */
+.navbar-header {
+  margin-bottom: 25px; }
+
+/* line 27, ../sass/_common.sass */
+.navbar-default {
+  border: none;
+  background: none;
+  padding: 10px 0 0;
+  text-align: center; }
+  /* line 33, ../sass/_common.sass */
+  .navbar-default .icon-bar {
+    background-color: white !important; }
+  /* line 36, ../sass/_common.sass */
+  .navbar-default .navbar-nav {
+    margin-top: 10px;
+    display: inline-block;
+    float: none; }
+    /* line 42, ../sass/_common.sass */
+    .navbar-default .navbar-nav li a {
+      color: white;
+      font-family: "aleksandracregular";
+      font-size: 18px;
+      position: relative; }
+      /* line 48, ../sass/_common.sass */
+      .navbar-default .navbar-nav li a:after {
+        content: "";
+        display: inline-block;
+        background: url("../img/menu-circle.png") no-repeat;
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        right: -3px;
+        top: 23px; }
+    /* line 60, ../sass/_common.sass */
+    .navbar-default .navbar-nav li:last-child a:after {
+      display: none; }
+    /* line 64, ../sass/_common.sass */
+    .navbar-default .navbar-nav li.active a, .navbar-default .navbar-nav li:hover a {
+      background-color: transparent !important;
+      color: white !important;
+      text-decoration: underline; }
+  /* line 69, ../sass/_common.sass */
+  .navbar-default .navbar-right {
+    text-align: right;
+    margin-top: 15px; }
+    /* line 73, ../sass/_common.sass */
+    .navbar-default .navbar-right h2 {
+      color: white;
+      font-family: "clear_sansbold";
+      font-weight: normal;
+      font-size: 24px;
+      margin: 0; }
+    /* line 80, ../sass/_common.sass */
+    .navbar-default .navbar-right a {
+      font-family: "neristhin";
+      color: white;
+      font-size: 16px;
+      line-height: 1;
+      display: inline-block;
+      border-bottom: 1px dotted white;
+      text-decoration: none; }
+
+/* line 90, ../sass/_common.sass */
+header {
+  background: url("../img/header-bg.jpg") top no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/* line 94, ../sass/_common.sass */
+.root-b__descr {
+  background: url("../img/root-b/top-bg.jpg") no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 50px; }
+  /* line 100, ../sass/_common.sass */
+  .root-b__descr h2 {
+    color: white;
+    font-family: "aleksandracregular";
+    font-weight: normal;
+    font-size: 52px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 0; }
+    /* line 109, ../sass/_common.sass */
+    .root-b__descr h2 span {
+      font-size: 18px;
+      position: relative;
+      top: -30px; }
+  /* line 114, ../sass/_common.sass */
+  .root-b__descr h3 {
+    margin-top: 0;
+    color: white;
+    font-family: "aleksandracregular";
+    font-weight: normal;
+    font-size: 24px; }
+  /* line 121, ../sass/_common.sass */
+  .root-b__descr .root-b__descr__price {
+    text-align: center; }
+    /* line 124, ../sass/_common.sass */
+    .root-b__descr .root-b__descr__price > p {
+      display: inline-block;
+      background: url("../img/price-bg.png") no-repeat;
+      width: 136px;
+      height: 136px;
+      color: white;
+      font-family: "clear_sansregular";
+      font-size: 18px;
+      line-height: 1;
+      padding-top: 25px; }
+      /* line 135, ../sass/_common.sass */
+      .root-b__descr .root-b__descr__price > p span {
+        font-size: 41px;
+        line-height: 1; }
+
+/* line 139, ../sass/_common.sass */
+.root-form {
+  background: url("../img/header-bg.jpg") bottom no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover; }
+  /* line 143, ../sass/_common.sass */
+  .root-form .col-md-8 {
+    position: relative; }
+    /* line 146, ../sass/_common.sass */
+    .root-form .col-md-8 .root-form__descr {
+      background: url("../img/root-descr-border.png") no-repeat;
+      -webkit-background-size: 100% 100%;
+      background-size: 100% 100%;
+      width: 291px;
+      height: 190px;
+      float: right;
+      padding: 20px;
+      position: relative;
+      margin-right: 20px;
+      margin-top: 85px; }
+      /* line 158, ../sass/_common.sass */
+      .root-form .col-md-8 .root-form__descr p {
+        color: white;
+        font-family: "aleksandracregular";
+        font-size: 19px;
+        margin: 10px 0;
+        line-height: 1.6; }
+      /* line 165, ../sass/_common.sass */
+      .root-form .col-md-8 .root-form__descr:before {
+        content: "";
+        position: absolute;
+        display: block;
+        background: url("../img/root-descr-top-quote.png") no-repeat;
+        width: 38px;
+        height: 30px;
+        top: -17px;
+        left: 20px; }
+      /* line 175, ../sass/_common.sass */
+      .root-form .col-md-8 .root-form__descr:after {
+        content: "";
+        position: absolute;
+        display: block;
+        background: url("../img/root-descr-bottom-quote.png") no-repeat;
+        width: 38px;
+        height: 30px;
+        bottom: -17px;
+        right: 20px; }
+  /* line 186, ../sass/_common.sass */
+  .root-form .root-img {
+    position: relative;
+    margin-left: -60px;
+    top: -40px;
+    margin-bottom: -125px; }
+  /* line 192, ../sass/_common.sass */
+  .root-form .form-b {
+    background: url("../img/root-b/form-bg.png") no-repeat;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: relative;
+    text-align: center;
+    padding: 25px 35px;
+    margin-bottom: -65px;
+    padding-bottom: 60px;
+    overflow: hidden; }
+    /* line 202, ../sass/_common.sass */
+    .root-form .form-b:before {
+      content: "";
+      background: url("../img/root-b/form-shadow.png") no-repeat;
+      display: block;
+      width: 488px;
+      height: 26px;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      margin-left: -244px; }
+    /* line 213, ../sass/_common.sass */
+    .root-form .form-b h2 {
+      color: white;
+      font-family: "aleksandracregular";
+      font-size: 24px;
+      text-transform: uppercase;
+      font-weight: normal;
+      margin-top: 0; }
+    /* line 221, ../sass/_common.sass */
+    .root-form .form-b .counter {
+      display: inline-block; }
+      /* line 224, ../sass/_common.sass */
+      .root-form .form-b .counter .bl {
+        float: left;
+        margin: 0 1.5px; }
+        /* line 228, ../sass/_common.sass */
+        .root-form .form-b .counter .bl span {
+          display: inline-block;
+          background: url("../img/counter-bg.png") no-repeat;
+          width: 61px;
+          height: 63px;
+          color: #1f1f1f;
+          font-family: "clear_sansbold";
+          font-weight: normal;
+          font-size: 29px;
+          line-height: 1;
+          padding-top: 15px; }
+        /* line 240, ../sass/_common.sass */
+        .root-form .form-b .counter .bl p {
+          margin-top: 0;
+          font-size: 11px;
+          font-family: "aleksandracregular";
+          color: white; }
+    /* line 246, ../sass/_common.sass */
+    .root-form .form-b input {
+      width: 100%;
+      height: 35px;
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
+      background-color: white;
+      border: none;
+      margin-bottom: 12px;
+      padding-left: 10px;
+      color: #999999;
+      font-family: "aleksandracregular";
+      font-size: 15px; }
+      /* line 258, ../sass/_common.sass */
+      .root-form .form-b input:focus {
+        -moz-box-shadow: 0 0 9px rgba(204, 62, 82, 0.13);
+        -webkit-box-shadow: 0 0 9px rgba(204, 62, 82, 0.13);
+        box-shadow: 0 0 9px rgba(204, 62, 82, 0.13); }
+    /* line 261, ../sass/_common.sass */
+    .root-form .form-b button {
+      width: 100%;
+      height: 53px;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+      background-color: #7ea641;
+      -moz-box-shadow: 0 3px 0 #658f23;
+      -webkit-box-shadow: 0 3px 0 #658f23;
+      box-shadow: 0 3px 0 #658f23;
+      border: none;
+      color: white;
+      font-family: "aleksandracregular";
+      font-size: 25px;
+      margin-top: 10px; }
+
+/* line 275, ../sass/_common.sass */
+.root-descr {
+  margin-top: 80px; }
+  /* line 278, ../sass/_common.sass */
+  .root-descr h2 {
+    color: #272727;
+    font-family: "aleksandracregular";
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 0; }
+  /* line 287, ../sass/_common.sass */
+  .root-descr .root-descr__item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px #eaeaea solid; }
+    /* line 292, ../sass/_common.sass */
+    .root-descr .root-descr__item:last-child {
+      border-bottom: none; }
+    /* line 295, ../sass/_common.sass */
+    .root-descr .root-descr__item p {
+      font-size: 18px;
+      font-family: "aleksandracregular"; }
+
+/* line 299, ../sass/_common.sass */
+.med-b {
+  background: url("../img/med-b/bg.jpg") no-repeat;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  text-align: center;
+  color: white;
+  font-family: "aleksandracregular";
+  padding-bottom: 75px; }
+  /* line 307, ../sass/_common.sass */
+  .med-b h2 {
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: normal; }
+    /* line 313, ../sass/_common.sass */
+    .med-b h2 img {
+      margin-bottom: 25px; }
+  /* line 316, ../sass/_common.sass */
+  .med-b p {
+    font-size: 17px; }
+
+/* line 320, ../sass/_common.sass */
+.use-b {
+  padding-top: 40px; }
+  /* line 323, ../sass/_common.sass */
+  .use-b h2 {
+    font-family: "aleksandracregular";
+    font-size: 42px;
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 40px; }
+  /* line 331, ../sass/_common.sass */
+  .use-b ul {
+    list-style: none;
+    margin-left: 50px; }
+  /* line 335, ../sass/_common.sass */
+  .use-b li {
+    position: relative;
+    min-height: 59px;
+    margin-bottom: 15px;
+    background: url("../img/use-b/item-bottom-border.png") bottom repeat-x;
+    padding-bottom: 10px; }
+    /* line 342, ../sass/_common.sass */
+    .use-b li i {
+      position: absolute;
+      background: url("../img/use-b/item-num-bg.png") no-repeat;
+      width: 66px;
+      height: 59px;
+      left: -95px;
+      text-align: center;
+      color: white;
+      font-style: normal;
+      font-family: "clear_sansregular";
+      font-size: 29px;
+      line-height: 1;
+      padding-right: 5px;
+      padding-top: 15px; }
+    /* line 357, ../sass/_common.sass */
+    .use-b li p {
+      font-size: 18px;
+      font-family: "aleksandracregular";
+      color: #333333;
+      display: inline-block;
+      vertical-align: middle; }
+    /* line 366, ../sass/_common.sass */
+    .use-b li:first-child p {
+      margin-top: 0; }
+
+/* line 369, ../sass/_common.sass */
+.med-rec {
+  margin-top: 80px; }
+  /* line 372, ../sass/_common.sass */
+  .med-rec .container {
+    border: 4px #bf1b2b solid;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    padding-bottom: 20px; }
+    /* line 378, ../sass/_common.sass */
+    .med-rec .container > h2 {
+      color: #333333;
+      font-family: "aleksandracregular";
+      font-size: 42px;
+      line-height: 1.3;
+      text-transform: uppercase;
+      font-weight: normal;
+      margin-bottom: 30px; }
+    /* line 388, ../sass/_common.sass */
+    .med-rec .container .icon {
+      margin-top: -40px;
+      padding: 0 30px;
+      background: white;
+      position: relative; }
+  /* line 394, ../sass/_common.sass */
+  .med-rec .item {
+    font-family: "aleksandracregular";
+    margin: 0 30px; }
+    /* line 398, ../sass/_common.sass */
+    .med-rec .item .title {
+      *zoom: 1;
+      text-align: left;
+      position: relative;
+      margin-bottom: 35px; }
+      /* line 174, ../sass/lib/_mixins.sass */
+      .med-rec .item .title:after {
+        content: " ";
+        display: table;
+        clear: both; }
+      /* line 404, ../sass/_common.sass */
+      .med-rec .item .title img {
+        float: left;
+        margin-right: 30px; }
+      /* line 408, ../sass/_common.sass */
+      .med-rec .item .title h2 {
+        display: inline-block;
+        vertical-align: bottom;
+        font-size: 25px;
+        line-height: 1;
+        width: 50%;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 0;
+        font-weight: normal; }
+    /* line 419, ../sass/_common.sass */
+    .med-rec .item .descr {
+      margin-left: 75px;
+      padding-bottom: 30px; }
+      /* line 423, ../sass/_common.sass */
+      .med-rec .item .descr hr {
+        background: url("../img/med-rec/bottom-border.jpg") bottom repeat-x;
+        display: inline-block;
+        width: 100%;
+        height: 5px;
+        border: none;
+        margin-top: 0;
+        margin-bottom: 65px; }
+      /* line 432, ../sass/_common.sass */
+      .med-rec .item .descr p {
+        text-align: left;
+        font-size: 16px; }
+
+/* line 436, ../sass/_common.sass */
+.how-we-work {
+  text-align: center;
+  padding-bottom: 150px;
+  margin-top: 70px; }
+  /* line 441, ../sass/_common.sass */
+  .how-we-work h2 {
+    color: #272727;
+    font-family: "aleksandracregular";
+    font-size: 42px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 40px; }
+  /* line 450, ../sass/_common.sass */
+  .how-we-work .bg {
+    background: url("../img/how-we-work/bg.jpg") no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-top: 35px;
+    padding-bottom: 35px; }
+  /* line 457, ../sass/_common.sass */
+  .how-we-work .how-we-work__items > div {
+    border-right: 1px #c86765 solid;
+    position: relative; }
+    /* line 461, ../sass/_common.sass */
+    .how-we-work .how-we-work__items > div .img {
+      height: 94px; }
+      /* line 464, ../sass/_common.sass */
+      .how-we-work .how-we-work__items > div .img:after {
+        content: "";
+        display: block;
+        position: absolute;
+        background: url("../img/how-we-work/triangle.png") no-repeat;
+        width: 40px;
+        height: 14px;
+        bottom: -48px;
+        left: 50%;
+        margin-left: -20px; }
+    /* line 475, ../sass/_common.sass */
+    .how-we-work .how-we-work__items > div:last-child {
+      border: none; }
+    /* line 478, ../sass/_common.sass */
+    .how-we-work .how-we-work__items > div p {
+      color: #272727;
+      font-family: "aleksandracregular";
+      font-size: 16px;
+      position: absolute;
+      bottom: -150px;
+      left: 0;
+      right: 0; }
+
+/* line 488, ../sass/_common.sass */
+.reviews {
+  text-align: center;
+  font-family: "aleksandracregular"; }
+  /* line 492, ../sass/_common.sass */
+  .reviews h2 {
+    color: #272727;
+    font-size: 46px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 40px; }
+  /* line 500, ../sass/_common.sass */
+  .reviews .row > div {
+    font-family: "aleksandracregular"; }
+    /* line 503, ../sass/_common.sass */
+    .reviews .row > div:first-child {
+      border-right: 1px #ebebeb solid; }
+    /* line 506, ../sass/_common.sass */
+    .reviews .row > div p {
+      color: #414040;
+      font-size: 18px; }
+    /* line 511, ../sass/_common.sass */
+    .reviews .row > div .author {
+      color: #999999;
+      font-size: 16px; }
+  /* line 515, ../sass/_common.sass */
+  .reviews .btns {
+    margin-top: 30px;
+    margin-bottom: 50px; }
+  /* line 519, ../sass/_common.sass */
+  .reviews .more {
+    width: 226px;
+    height: 53px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #e3e3e3;
+    -moz-box-shadow: 0 3px 0 #b8b8b8;
+    -webkit-box-shadow: 0 3px 0 #b8b8b8;
+    box-shadow: 0 3px 0 #b8b8b8;
+    display: block;
+    margin: 0 auto;
+    font-size: 25px;
+    font-family: "aleksandracregular";
+    text-decoration: none;
+    color: #353535;
+    padding-top: 8px; }
+  /* line 533, ../sass/_common.sass */
+  .reviews .add-rev {
+    color: #404040;
+    font-size: 18px;
+    line-height: 1;
+    border-bottom: 1px #404040 dotted;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 25px; }
+
+/* line 543, ../sass/_common.sass */
+.other {
+  padding-top: 100px;
+  text-align: center; }
+  /* line 547, ../sass/_common.sass */
+  .other h2 {
+    color: #333333;
+    font-family: "aleksandracregular";
+    font-size: 42px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 40px; }
+  /* line 556, ../sass/_common.sass */
+  .other .other-items .item {
+    padding: 35px 25px;
+    border: 5px #bf1c2b solid;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-family: "aleksandracregular"; }
+    /* line 562, ../sass/_common.sass */
+    .other .other-items .item h3 {
+      font-size: 21px;
+      font-weight: normal;
+      color: #181818;
+      margin-bottom: 0; }
+    /* line 568, ../sass/_common.sass */
+    .other .other-items .item h4 {
+      color: #666666;
+      font-size: 18px;
+      font-weight: normal;
+      margin-top: 0; }
+    /* line 574, ../sass/_common.sass */
+    .other .other-items .item p {
+      font-size: 29px;
+      color: #181818;
+      text-transform: uppercase; }
+  /* line 579, ../sass/_common.sass */
+  .other .other-items .img {
+    height: 177px; }
+    /* line 582, ../sass/_common.sass */
+    .other .other-items .img img {
+      display: inline-block;
+      vertical-align: middle; }
+  /* line 588, ../sass/_common.sass */
+  .other input {
+    width: 100%;
+    height: 35px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background-color: white;
+    border: 1px solid rgba(204, 204, 204, 0.59);
+    margin-bottom: 12px;
+    padding-left: 10px;
+    color: #999999;
+    font-family: "aleksandracregular";
+    font-size: 15px; }
+    /* line 600, ../sass/_common.sass */
+    .other input:focus {
+      -moz-box-shadow: 0 0 9px rgba(204, 62, 82, 0.13);
+      -webkit-box-shadow: 0 0 9px rgba(204, 62, 82, 0.13);
+      box-shadow: 0 0 9px rgba(204, 62, 82, 0.13); }
+  /* line 603, ../sass/_common.sass */
+  .other button {
+    width: 100%;
+    height: 53px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #7ea641;
+    -moz-box-shadow: 0 3px 0 #658f23;
+    -webkit-box-shadow: 0 3px 0 #658f23;
+    box-shadow: 0 3px 0 #658f23;
+    border: none;
+    color: white;
+    font-family: "aleksandracregular";
+    font-size: 25px;
+    margin-top: 10px; }
+
+/* line 616, ../sass/_common.sass */
+footer {
+  background: url("../img/footer/bg.jpg") repeat-x;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin-top: 65px; }
+
+/* line 623, ../sass/_common.sass */
+.modal {
+  text-align: center; }
+  /* line 626, ../sass/_common.sass */
+  .modal .modal-content {
+    border: 4px solid #bf1c2b;
+    position: relative;
+    padding-bottom: 25px; }
+    /* line 631, ../sass/_common.sass */
+    .modal .modal-content .close {
+      position: absolute;
+      top: 7px;
+      right: 10px; }
+  /* line 636, ../sass/_common.sass */
+  .modal .modal-header {
+    border: none; }
+    /* line 639, ../sass/_common.sass */
+    .modal .modal-header h4 {
+      color: #272727;
+      font-family: "aleksandracregular";
+      font-size: 47px; }
+    /* line 644, ../sass/_common.sass */
+    .modal .modal-header p {
+      color: #272727;
+      font-family: "aleksandracregular";
+      font-size: 17px; }
+  /* line 651, ../sass/_common.sass */
+  .modal form input[type=text] {
+    width: 50%;
+    height: 35px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    margin-bottom: 12px;
+    padding-left: 10px;
+    font-family: "aleksandracregular";
+    font-size: 15px; }
+    /* line 663, ../sass/_common.sass */
+    .modal form input[type=text]:focus {
+      -moz-box-shadow: 0 0 9px rgba(204, 62, 82, 0.13);
+      -webkit-box-shadow: 0 0 9px rgba(204, 62, 82, 0.13);
+      box-shadow: 0 0 9px rgba(204, 62, 82, 0.13); }
+  /* line 666, ../sass/_common.sass */
+  .modal form button {
+    width: 50%;
+    height: 53px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #7ea641;
+    -moz-box-shadow: 0 3px 0 #658f23;
+    -webkit-box-shadow: 0 3px 0 #658f23;
+    box-shadow: 0 3px 0 #658f23;
+    border: none;
+    color: white;
+    font-family: "aleksandracregular";
+    font-size: 25px;
+    margin-top: 10px; }
+
+/* line 679, ../sass/_common.sass */
+#tnx img {
+  margin-top: 30px;
+  margin-bottom: 40px; }
+/* line 683, ../sass/_common.sass */
+#tnx .modal-content {
+  padding-bottom: 45px; }
+
+/* line 689, ../sass/_common.sass */
+.big-form .modal-content {
+  padding-bottom: 0; }
+/* line 692, ../sass/_common.sass */
+.big-form form {
+  padding: 20px; }
+/* line 695, ../sass/_common.sass */
+.big-form input[type=text] {
+  float: left;
+  width: 48% !important; }
+  /* line 699, ../sass/_common.sass */
+  .big-form input[type=text]:first-child {
+    margin-right: 15px; }
+/* line 702, ../sass/_common.sass */
+.big-form textarea {
+  height: 95px;
+  border: 1px solid #dddddd;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-color: white;
+  resize: none;
+  width: 100%;
+  font-size: 15px;
+  font-family: "aleksandracregular";
+  padding: 5px 10px; }
+/* line 713, ../sass/_common.sass */
+.big-form .row-b {
+  *zoom: 1; }
+  /* line 174, ../sass/lib/_mixins.sass */
+  .big-form .row-b:after {
+    content: " ";
+    display: table;
+    clear: both; }
+  /* line 716, ../sass/_common.sass */
+  .big-form .row-b .checkbox {
+    float: left; }
+    /* line 719, ../sass/_common.sass */
+    .big-form .row-b .checkbox > input {
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      height: 0;
+      -moz-appearance: none;
+      -webkit-appearance: none; }
+      /* line 730, ../sass/_common.sass */
+      .big-form .row-b .checkbox > input:checked + label i span {
+        width: 13px;
+        height: 13px;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        background-color: #bf1b2b;
+        display: block;
+        margin: 4px 0 0 4px; }
+    /* line 739, ../sass/_common.sass */
+    .big-form .row-b .checkbox label {
+      *zoom: 1;
+      padding: 0;
+      margin-top: 20px;
+      color: #333333;
+      font-family: "aleksandracregular";
+      text-align: left;
+      font-size: 14px;
+      line-height: 1; }
+      /* line 174, ../sass/lib/_mixins.sass */
+      .big-form .row-b .checkbox label:after {
+        content: " ";
+        display: table;
+        clear: both; }
+      /* line 744, ../sass/_common.sass */
+      .big-form .row-b .checkbox label i {
+        text-align: center;
+        width: 23px;
+        height: 23px;
+        border: 1px solid #dddddd;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        background-color: white;
+        float: left; }
+      /* line 759, ../sass/_common.sass */
+      .big-form .row-b .checkbox label .text {
+        float: left;
+        margin-left: 10px; }
+  /* line 765, ../sass/_common.sass */
+  .big-form .row-b button {
+    float: right; }
+
+@media (max-width: 992px) {
+  /* line 779, ../sass/_common.sass */
+  .root-descr__item img {
+    display: none; }
+
+  /* line 782, ../sass/_common.sass */
+  .how-we-work {
+    display: none; }
+
+  /* line 786, ../sass/_common.sass */
+  .root-descr__item img {
+    display: none; }
+
+  /* line 790, ../sass/_common.sass */
+  .root-form .form-b {
+    margin-top: 90px; }
+    /* line 793, ../sass/_common.sass */
+    .root-form .form-b input, .root-form .form-b button {
+      max-width: 60%; }
+
+  /* line 796, ../sass/_common.sass */
+  .reviews {
+    margin-top: 40px; }
+    /* line 799, ../sass/_common.sass */
+    .reviews .row > div {
+      border-right: none !important;
+      margin-bottom: 50px; } }
+@media (max-width: 768px) {
+  /* line 805, ../sass/_common.sass */
+  .navbar-nav li a:after {
+    display: none !important; }
+
+  /* line 808, ../sass/_common.sass */
+  .root-b__descr h2 {
+    font-size: 45px; }
+    /* line 811, ../sass/_common.sass */
+    .root-b__descr h2 span {
+      top: -20px; }
+
+  /* line 814, ../sass/_common.sass */
+  .root-form__descr {
+    margin-right: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    margin-bottom: 50px; }
+
+  /* line 820, ../sass/_common.sass */
+  .med-b h2, .use-b h2, .med-rec .container > h2 {
+    font-size: 30px;
+    line-height: 1.3; }
+
+  /* line 824, ../sass/_common.sass */
+  .med-rec {
+    margin-left: 15px;
+    margin-right: 15px; }
+    /* line 829, ../sass/_common.sass */
+    .med-rec .item .title {
+      text-align: center; }
+      /* line 832, ../sass/_common.sass */
+      .med-rec .item .title img {
+        float: none;
+        margin-right: 0; }
+      /* line 836, ../sass/_common.sass */
+      .med-rec .item .title h2 {
+        display: block;
+        width: 100%;
+        position: relative;
+        margin-top: 20px; }
+    /* line 842, ../sass/_common.sass */
+    .med-rec .item .descr {
+      margin-left: 0; }
+
+  /* line 846, ../sass/_common.sass */
+  .reviews h2 {
+    font-size: 30px; }
+
+  /* line 849, ../sass/_common.sass */
+  .root-img {
+    display: none; }
+
+  /* line 853, ../sass/_common.sass */
+  .root-form input, .root-form button {
+    max-width: 100% !important; }
+
+  /* line 856, ../sass/_common.sass */
+  .other .other-items .item {
+    margin-bottom: 30px; }
+
+  /* line 859, ../sass/_common.sass */
+  .navbar-collapse.in {
+    overflow: hidden; } }
+@media (min-width: 1200px) {
+  /* line 865, ../sass/_common.sass */
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    float: left; } }

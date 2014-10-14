@@ -1,0 +1,866 @@
+@import "bootstrap.min.css"
+@import "../fonts/fonts.css"
+
+// Fonts var
+
+$alex: 'aleksandracregular'
+$cs__regular: 'clear_sansregular'
+$cs__bold: 'clear_sansbold'
+$neris: 'neristhin'
+
+
+*
+  outline: none !important
+
+input.error, textarea.error
+  box-shadow: inset 0 0 10px red !important
+label.error
+  display: none !important
+
+
+.container
+  max-width: 965px
+
+.navbar-header
+  margin-bottom: 25px
+
+.navbar-default
+  border: none
+  background: none
+  padding: 10px 0 0
+  text-align: center
+  
+  .icon-bar
+    background-color: #fff !important
+
+  .navbar-nav
+    margin-top: 10px
+    display: inline-block
+    float: none
+
+    li
+      a
+        color: #fff // text color
+        font-family: $alex
+        font-size: 18px
+        position: relative
+
+        &:after
+          content: ''
+          display: inline-block
+          background: url("../img/menu-circle.png") no-repeat
+          width: 5px
+          height: 5px
+          position: absolute
+          right: -3px
+          top: 23px
+
+      &:last-child
+        a
+          &:after
+            display: none
+
+      &.active, &:hover
+        a
+          background-color: transparent !important
+          color: #ffffff !important
+          text-decoration: underline
+
+  .navbar-right
+    text-align: right
+    margin-top: 15px
+
+    h2
+      color: #fff // text color
+      font-family: $cs__bold
+      font-weight: normal
+      font-size: 24px
+      margin: 0
+
+    a
+      font-family: $neris
+      color: #fff // text color
+      font-size: 16px
+      line-height: 1
+      display: inline-block
+      border-bottom: 1px dotted white
+      text-decoration: none
+
+
+header
+  background: url("../img/header-bg.jpg") top no-repeat
+  +background-size(cover)
+
+.root-b__descr
+  background: url("../img/root-b/top-bg.jpg") no-repeat
+  +background-size(cover)
+  padding-top: 30px
+  padding-bottom: 50px
+
+  h2
+    color: #ffffff
+    font-family: $alex
+    font-weight: normal
+    font-size: 52px
+    line-height: 1
+    text-transform: uppercase
+    margin-bottom: 0
+
+    span
+      font-size: 18px
+      position: relative
+      top: -30px
+
+  h3
+    margin-top: 0
+    color: #ffffff
+    font-family: $alex
+    font-weight: normal
+    font-size: 24px
+
+  .root-b__descr__price
+    text-align: center
+
+    >p
+      display: inline-block
+      background: url("../img/price-bg.png") no-repeat
+      width: 136px
+      height: 136px
+      color: #ffffff
+      font-family: $cs__regular
+      font-size: 18px
+      line-height: 1
+      padding-top: 25px
+
+      span
+        font-size: 41px
+        line-height: 1
+
+.root-form
+  background: url("../img/header-bg.jpg") bottom no-repeat
+  +background-size(cover)
+
+  .col-md-8
+    position: relative
+
+    .root-form__descr
+      background: url("../img/root-descr-border.png") no-repeat
+      -webkit-background-size: 100% 100%
+      background-size: 100% 100%
+      width: 291px
+      height: 190px
+      float: right
+      padding: 20px
+      position: relative
+      margin-right: 20px
+      margin-top: 85px
+
+      p
+        color: #ffffff
+        font-family: $alex
+        font-size: 19px
+        margin: 10px 0
+        line-height: 1.6
+
+      &:before
+        content: ''
+        position: absolute
+        display: block
+        background: url("../img/root-descr-top-quote.png") no-repeat
+        width: 38px
+        height: 30px
+        top: -17px
+        left: 20px
+
+      &:after
+        content: ''
+        position: absolute
+        display: block
+        background: url("../img/root-descr-bottom-quote.png") no-repeat
+        width: 38px
+        height: 30px
+        bottom: -17px
+        right: 20px
+
+
+  .root-img
+    position: relative
+    margin-left: -60px
+    top: -40px
+    margin-bottom: -125px
+
+  .form-b
+    background: url("../img/root-b/form-bg.png") no-repeat
+    +background-size(100% 100%)
+    position: relative
+    text-align: center
+    padding: 25px 35px
+    margin-bottom: -65px
+    padding-bottom: 60px
+    overflow: hidden
+
+    &:before
+      content: ''
+      background: url("../img/root-b/form-shadow.png") no-repeat
+      display: block
+      width: 488px
+      height: 26px
+      position: absolute
+      left: 50%
+      top: 0
+      margin-left: -244px
+
+    h2
+      color: #fff // text color
+      font-family: $alex
+      font-size: 24px
+      text-transform: uppercase
+      font-weight: normal
+      margin-top: 0
+
+    .counter
+      display: inline-block
+
+      .bl
+        float: left
+        margin: 0 1.5px
+
+        span
+          display: inline-block
+          background: url("../img/counter-bg.png") no-repeat
+          width: 61px
+          height: 63px
+          color: #1f1f1f
+          font-family: $cs__bold
+          font-weight: normal
+          font-size: 29px
+          line-height: 1
+          padding-top: 15px
+
+        p
+          margin-top: 0
+          font-size: 11px
+          font-family: $alex
+          color: #ffffff
+
+    input
+      width: 100%
+      height: 35px
+      @include border-radius(2px) // border radius
+      background-color: #fff // layer fill content + color overlay
+      border: none
+      margin-bottom: 12px
+      padding-left: 10px
+      color: #999 // text color
+      font-family: $alex
+      font-size: 15px
+
+      &:focus
+        @include box-shadow(0 0 9px rgba(204,62,82,.13)) // outer glow
+
+    button
+      width: 100%
+      height: 53px
+      @include border-radius(4px) // border radius
+      background-color: #7ea641 // layer fill content + color overlay
+      @include box-shadow(0 3px 0 #658f23) // drop shadow
+      border: none
+      color: #fff // text color
+      font-family: $alex
+      font-size: 25px
+      margin-top: 10px
+
+
+
+.root-descr
+  margin-top: 80px
+
+  h2
+    color: #272727 // text color
+    font-family: $alex
+    font-size: 45px
+    text-transform: uppercase
+    font-weight: normal
+    margin-bottom: 0
+
+
+  .root-descr__item
+    padding-top: 30px
+    padding-bottom: 30px
+    border-bottom: 1px #EAEAEA solid
+
+    &:last-child
+      border-bottom: none
+
+    p
+      font-size: 18px
+      font-family: $alex
+
+.med-b
+  background: url("../img/med-b/bg.jpg") no-repeat
+  +background-size(100% 100%)
+  text-align: center
+  color: #ffffff
+  font-family: $alex
+  padding-bottom: 75px
+
+  h2
+    text-transform: uppercase
+    font-size: 42px
+    line-height: 1.2
+    font-weight: normal
+
+    img
+      margin-bottom: 25px
+
+  p
+    font-size: 17px
+
+
+.use-b
+  padding-top: 40px
+
+  h2
+    font-family: $alex
+    font-size: 42px
+    color: #333
+    text-transform: uppercase
+    font-weight: normal
+    margin-bottom: 40px
+
+  ul
+    list-style: none
+    margin-left: 50px
+
+  li
+    position: relative
+    min-height: 59px
+    margin-bottom: 15px
+    background: url("../img/use-b/item-bottom-border.png") bottom repeat-x
+    padding-bottom: 10px
+
+    i
+      position: absolute
+      background: url("../img/use-b/item-num-bg.png") no-repeat
+      width: 66px
+      height: 59px
+      left: -95px
+      text-align: center
+      color: #ffffff
+      font-style: normal
+      font-family: $cs__regular
+      font-size: 29px
+      line-height: 1
+      padding-right: 5px
+      padding-top: 15px
+
+    p
+      font-size: 18px
+      font-family: $alex
+      color: #333
+      display: inline-block
+      vertical-align: middle
+
+
+    &:first-child
+      p
+        margin-top: 0
+
+.med-rec
+  margin-top: 80px
+
+  .container
+    border: 4px #bf1b2b solid
+    +border-radius(3px)
+    text-align: center
+    padding-bottom: 20px
+
+    >h2
+      color: #333 // text color
+      font-family: $alex
+      font-size: 42px
+      line-height: 1.3
+      text-transform: uppercase
+      font-weight: normal
+      margin-bottom: 30px
+
+
+    .icon
+      margin-top: -40px
+      padding: 0 30px
+      background: #fff
+      position: relative
+
+  .item
+    font-family: $alex
+    margin: 0 30px
+
+    .title
+      +clr
+      text-align: left
+      position: relative
+      margin-bottom: 35px
+
+      img
+        float: left
+        margin-right: 30px
+
+      h2
+        display: inline-block
+        vertical-align: bottom
+        font-size: 25px
+        line-height: 1
+        width: 50%
+        position: absolute
+        bottom: 0
+        margin-bottom: 0
+        font-weight: normal
+
+    .descr
+      margin-left: 75px
+      padding-bottom: 30px
+
+      hr
+        background: url("../img/med-rec/bottom-border.jpg") bottom repeat-x
+        display: inline-block
+        width: 100%
+        height: 5px
+        border: none
+        margin-top: 0
+        margin-bottom: 65px
+
+      p
+        text-align: left
+        font-size: 16px
+
+.how-we-work
+  text-align: center
+  padding-bottom: 150px
+  margin-top: 70px
+
+  h2
+    color: #272727 // text color
+    font-family: $alex
+    font-size: 42px
+    font-weight: normal
+    text-transform: uppercase
+    margin-bottom: 40px
+
+
+  .bg
+    background: url("../img/how-we-work/bg.jpg") no-repeat
+    +background-size(cover)
+    padding-top: 35px
+    padding-bottom: 35px
+
+  .how-we-work__items
+    >div
+      border-right: 1px #c86765 solid
+      position: relative
+
+      .img
+        height: 94px
+        
+        &:after
+          content: ''
+          display: block
+          position: absolute
+          background: url("../img/how-we-work/triangle.png") no-repeat
+          width: 40px
+          height: 14px
+          bottom: -48px
+          left: 50%
+          margin-left: -20px
+
+      &:last-child
+        border: none
+
+      p
+        color: #272727 // text color
+        font-family: $alex
+        font-size: 16px
+        position: absolute
+        bottom: -150px
+        left: 0
+        right: 0
+
+
+.reviews
+  text-align: center
+  font-family: $alex
+
+  h2
+    color: #272727 // text color
+    font-size: 46px
+    font-weight: normal
+    text-transform: uppercase
+    margin-bottom: 40px
+
+  .row
+    >div
+      font-family: $alex
+
+      &:first-child
+        border-right: 1px #EBEBEB solid
+
+      p
+        color: #414040
+        font-size: 18px
+
+
+      .author
+        color: #999999
+        font-size: 16px
+
+  .btns
+    margin-top: 30px
+    margin-bottom: 50px
+
+  .more
+    width: 226px
+    height: 53px
+    @include border-radius(4px) // border radius
+    background-color: #e3e3e3 // layer fill content + color overlay
+    @include box-shadow(0 3px 0 #b8b8b8) // drop shadow
+    display: block
+    margin: 0 auto
+    font-size: 25px
+    font-family: $alex
+    text-decoration: none
+    color: #353535
+    padding-top: 8px
+
+  .add-rev
+    color: #404040
+    font-size: 18px
+    line-height: 1
+    border-bottom: 1px #404040 dotted
+    display: inline-block
+    text-decoration: none
+    margin-top: 25px
+
+
+.other
+  padding-top: 100px
+  text-align: center
+
+  h2
+    color: #333 // text color
+    font-family: $alex
+    font-size: 42px
+    font-weight: normal
+    text-transform: uppercase
+    margin-bottom: 40px
+    
+  .other-items
+    .item
+      padding: 35px 25px
+      border: 5px #bf1c2b solid
+      +border-radius(4px)
+      font-family: $alex
+
+      h3
+        font-size: 21px
+        font-weight: normal
+        color: #181818
+        margin-bottom: 0
+
+      h4
+        color: #666666
+        font-size: 18px
+        font-weight: normal
+        margin-top: 0
+
+      p
+        font-size: 29px
+        color: #181818
+        text-transform: uppercase
+
+    .img
+      height: 177px
+
+      img
+        display: inline-block
+        vertical-align: middle
+
+
+
+  input
+    width: 100%
+    height: 35px
+    @include border-radius(2px) // border radius
+    background-color: #fff // layer fill content + color overlay
+    border: 1px solid rgba(204,204,204,.59)
+    margin-bottom: 12px
+    padding-left: 10px
+    color: #999 // text color
+    font-family: $alex
+    font-size: 15px
+
+    &:focus
+      @include box-shadow(0 0 9px rgba(204,62,82,.13)) // outer glow
+
+  button
+    width: 100%
+    height: 53px
+    @include border-radius(4px) // border radius
+    background-color: #7ea641 // layer fill content + color overlay
+    @include box-shadow(0 3px 0 #658f23) // drop shadow
+    border: none
+    color: #fff // text color
+    font-family: $alex
+    font-size: 25px
+    margin-top: 10px
+
+
+footer
+  background: url("../img/footer/bg.jpg") repeat-x
+  +background-size(cover)
+  margin-top: 65px
+
+//  Modal styles
+
+.modal
+  text-align: center
+
+  .modal-content
+    border: 4px solid #bf1c2b
+    position: relative
+    padding-bottom: 25px
+
+    .close
+      position: absolute
+      top: 7px
+      right: 10px
+
+  .modal-header
+    border: none
+
+    h4
+      color: #272727 // text color
+      font-family: $alex
+      font-size: 47px
+
+    p
+      color: #272727 // text color
+      font-family: $alex
+      font-size: 17px
+
+
+  form
+    input[type=text]
+      width: 50%
+      height: 35px
+      @include border-radius(4px) // border radius
+      background-color: #fff // layer fill content + color overlay
+      border: 1px solid #ddd
+      margin-bottom: 12px
+      padding-left: 10px
+      //color: #999 // text color
+      font-family: $alex
+      font-size: 15px
+
+      &:focus
+        @include box-shadow(0 0 9px rgba(204,62,82,.13)) // outer glow
+
+    button
+      width: 50%
+      height: 53px
+      @include border-radius(4px) // border radius
+      background-color: #7ea641 // layer fill content + color overlay
+      @include box-shadow(0 3px 0 #658f23) // drop shadow
+      border: none
+      color: #fff // text color
+      font-family: $alex
+      font-size: 25px
+      margin-top: 10px
+
+#tnx
+  img
+    margin-top: 30px
+    margin-bottom: 40px
+
+  .modal-content
+    padding-bottom: 45px
+
+
+.big-form
+
+  .modal-content
+    padding-bottom: 0
+
+  form
+    padding: 20px
+
+  input[type=text]
+    float: left
+    width: 48% !important
+
+    &:first-child
+      margin-right: 15px
+
+  textarea
+    height: 95px
+    border: 1px solid #ddd // stroke
+    @include border-radius(4px) // border radius
+    background-color: #fff
+    resize: none
+    width: 100%
+    font-size: 15px
+    font-family: $alex
+    padding: 5px 10px
+
+  .row-b
+    +clr
+
+    .checkbox
+      float: left
+
+      >input
+        display: block
+        overflow: hidden
+        visibility: hidden
+        height: 0
+        +appearance(none)
+        
+        &:checked
+          
+          &+label
+            i
+              span
+                width: 13px
+                height: 13px
+                @include border-radius(2px) // border radius
+                background-color: #bf1b2b // layer fill content + color overlay
+                display: block
+                margin: 4px 0 0 4px
+
+
+      label
+        +clr
+        padding: 0
+        margin-top: 20px
+
+        i
+          text-align: center
+          width: 23px
+          height: 23px
+          border: 1px solid #ddd // stroke
+          @include border-radius(4px) // border radius
+          background-color: #fff // layer fill content + color overlay
+          float: left
+
+        color: #333 // text color
+        font-family: $alex
+        text-align: left
+        font-size: 14px
+        line-height: 1
+
+        .text
+          float: left
+          margin-left: 10px
+
+
+
+    button
+      float: right
+
+
+
+// Media queries
+
+$screen-lg-min: 1200px
+$screen-md-min: 992px
+$screen-sm-min: 768px
+
+
+@media (max-width: $screen-md-min)
+  .root-descr__item
+    img
+      display: none
+
+  .how-we-work
+    display: none
+
+  .root-descr__item
+    img
+      display: none
+
+  .root-form
+    .form-b
+      margin-top: 90px
+
+      input, button
+        max-width: 60%
+
+  .reviews
+    margin-top: 40px
+
+    .row > div
+      border-right: none !important
+      margin-bottom: 50px
+
+
+@media (max-width: $screen-sm-min)
+  .navbar-nav li a:after
+    display: none !important
+
+  .root-b__descr h2
+    font-size: 45px
+
+    span
+      top: -20px
+
+  .root-form__descr
+    margin-right: 0 !important
+    width: auto !important
+    height: auto !important
+    margin-bottom: 50px
+
+  .med-b h2, .use-b h2, .med-rec .container > h2
+    font-size: 30px
+    line-height: 1.3
+
+  .med-rec
+    margin-left: 15px
+    margin-right: 15px
+
+    .item
+      .title
+        text-align: center
+
+        img
+          float: none
+          margin-right: 0
+
+        h2
+          display: block
+          width: 100%
+          position: relative
+          margin-top: 20px
+
+      .descr
+        margin-left: 0
+
+  .reviews
+    h2
+      font-size: 30px
+
+  .root-img
+    display: none
+
+  .root-form
+    input, button
+      max-width: 100% !important
+
+  .other .other-items .item
+    margin-bottom: 30px
+
+  .navbar-collapse.in
+    overflow: hidden
+
+
+
+@media (min-width: $screen-lg-min)
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form
+    float: left
